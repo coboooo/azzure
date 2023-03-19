@@ -42,14 +42,25 @@
 </head>
 
 <body>
-    <div id="main">
-        <div id="text">
-            <input type="text" id="query" autocomplete="off" autofocus>
+    <div class="container border">
+        <div class="container border">
+            <div class="row justify-content-center border">
+                <div class="col-md-8 border">
+                    <div class="input-group mb-3 border">
+                        <input type="text" class="form-control form-control-lg" id="query" autocomplete="off" autofocus>
+                    </div>
+                    <div>
+                        <div id="result"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="result"></div>
     </div>
-
+    <!-- <div class="container border">
+        1
+    </div> -->
 </body>
+
 </head>
 
 <script>
@@ -97,15 +108,15 @@ java
 
 <div id="disqus_thread"></div>
 
-<script>
+<!-- <script>
     (function () { var w = window; if (w.ChannelIO) { return w.console.error("ChannelIO script included twice.") } var ch = function () { ch.c(arguments) }; ch.q = []; ch.c = function (args) { ch.q.push(args) }; w.ChannelIO = ch; function l() { if (w.ChannelIOInitialized) { return } w.ChannelIOInitialized = true; var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://cdn.channel.io/plugin/ch-plugin-web.js"; var x = document.getElementsByTagName("script")[0]; if (x.parentNode) { x.parentNode.insertBefore(s, x) } } if (document.readyState === "complete") { l() } else { w.addEventListener("DOMContentLoaded", l); w.addEventListener("load", l) } })();
 
     ChannelIO('boot', {
         "pluginKey": "f3c53d98-da23-47b9-8ec0-145c85879f4c"
     });
-</script>
+</script> -->
 
-<script>
+<!-- <script>
     (function () { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
         s.src = 'https://aaa-8lkxjogcpe.disqus.com/embed.js';
@@ -115,4 +126,67 @@ java
 </script>
 <noscript>Please enable JavaScript to view the
     <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-</noscript>
+</noscript> -->
+
+<!-- <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 18px;
+        background-color: #ff9696;
+    }
+
+    .float {
+        position: fixed;
+        width: 80px;
+        height: 80px;
+        bottom: 40px;
+        right: 40px;
+        color: #944141;
+        background-color: #8e2277;
+        border: 10px;
+        border-color: rgb(34, 34, 255);
+        border-radius: 50px;
+        text-align: center;
+        /* box-shadow: 5px 5px 5px red; */
+    }
+
+    .my-float {
+        margin-top: 22px;
+    }
+</style> -->
+
+<a href="#" class="float">
+    <!-- <img src="kakaotalk.png" alt="My Image" class="my-float"> -->
+</a>
+
+<style>
+
+</style>
+
+<style>
+    .my-button {
+        width: 70px;
+        height: 70px;
+        background-color: #0C9;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 50px;
+        box-shadow: 0 0 5px 5px #d5ff2b;
+        transition: box-shadow 0.2s ease-in-out;
+    }
+
+    .my-button:hover {
+        box-shadow: 0 0 30px 30px #fff8ac;
+        border: rgb(33, 33, 33);
+        border-color: red;
+    }
+</style>
+
+<!-- <div class="my-button">Click me</div> -->
+<img class="my-button" src="kakaotalk.png" alt="My Image">
