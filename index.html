@@ -151,28 +151,6 @@ java
 <!-- <div class="my-button">Click me</div> -->
 <img class="my-button" src="kakaotalk.png" alt="My Image">
 
-<div id="disqus_thread"></div>
-
-<!-- <script>
-    (function () { var w = window; if (w.ChannelIO) { return w.console.error("ChannelIO script included twice.") } var ch = function () { ch.c(arguments) }; ch.q = []; ch.c = function (args) { ch.q.push(args) }; w.ChannelIO = ch; function l() { if (w.ChannelIOInitialized) { return } w.ChannelIOInitialized = true; var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://cdn.channel.io/plugin/ch-plugin-web.js"; var x = document.getElementsByTagName("script")[0]; if (x.parentNode) { x.parentNode.insertBefore(s, x) } } if (document.readyState === "complete") { l() } else { w.addEventListener("DOMContentLoaded", l); w.addEventListener("load", l) } })();
-
-    ChannelIO('boot', {
-        "pluginKey": "f3c53d98-da23-47b9-8ec0-145c85879f4c"
-    });
-</script> -->
-
-<!-- <script>
-    (function () { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://aaa-8lkxjogcpe.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the
-    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-</noscript> -->
-
 <!-- <style>
     * {
         padding: 0;
@@ -225,3 +203,22 @@ java
 <noscript>Please enable JavaScript to view the
     <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 </noscript>
+
+<!-- 라이브리 시티 설치 코드 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC81Njk3MS8zMzQzNQ==">
+    <script type="text/javascript">
+        (function (d, s) {
+            var j, e = d.getElementsByTagName(s)[0];
+
+            if (typeof LivereTower === 'function') { return; }
+
+            j = d.createElement(s);
+            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+            j.async = true;
+
+            e.parentNode.insertBefore(j, e);
+        })(document, 'script');
+    </script>
+    <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+<!-- 시티 설치 코드 끝 -->
