@@ -82,32 +82,30 @@
     jQuery(document).ready(function () {
         var resultContainer = jQuery('#result');
         var linesContainer = jQuery('#lines');
+
         linesContainer.html(lines.join('<br>'));
+
         jQuery('#query').on('keyup', function (event) {
             var term = jQuery(this).val();
             var filteredLines = lines.filter(function (line) {
                 return line.includes(term);
             });
-
             var formattedLines = filteredLines.map(function (line) {
                 if (term !== '' && line.includes(term)) {
                     line = line.replace(new RegExp(term, 'g'), '<span class="highlight">' + term + '</span>');
                 }
                 return line;
             });
-
             resultContainer.html(formattedLines.join('<br><hr>'));
-        });
+        }).keyup(); // Trigger keyup event on page load
     });
 
     var str = `
-tong a a json aㅁㄱ tong a a json aㅁㄱ tong a a json aㅁㄱ tong a a json aㅁㄱ tong a a json aㅁㄱ tong a a json aㅁㄱ tong a a json aㅁㄱ tong a a json aㅁㄱ 
-sing json json json
+대패삼겹된장찌개 : 대패삼겹살 200g / 무 약 2컵(200g) / 재래식된장 3큰술(60g) / 고추장 1큰술(20g) / 물 약 3과 1/2컵(650g) / 황설탕 1/3큰술(4g) / 간 마늘 1큰술(20g) / 대파 약 1/3대(30g) / 청양고추 3개(30g) / 홍고추 1개(10g)
 sing jquery
 kong Java Javaㅁ
 java jquery jquery
 `;
-
     var lines = str.split('\n');
     lines.shift(); // Remove the first line
     lines.pop(); // Remove the last line
@@ -133,6 +131,18 @@ java jquery jquery
     // });
 
 </script>
+
+<script>
+    (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://aaa-8lkxjogcpe.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 
 <a href="#" class="float">
     <!-- <img src="kakaotalk.png" alt="My Image" class="my-float"> -->
@@ -205,17 +215,7 @@ java jquery jquery
     // });
 </script>
 
-<script>
-    (function () { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://aaa-8lkxjogcpe.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the
-    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-</noscript>
+
 
 <!-- 라이브리 시티 설치 코드 -->
 <!-- <div id="lv-container" data-id="city" data-uid="MTAyMC81Njk3MS8zMzQzNQ==">
